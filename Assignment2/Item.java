@@ -28,4 +28,21 @@ public class Item {
         return itemDurability;
         
     }
+    
+    public int getID()
+    {
+        
+     return itemId;   
+    }
+    
+    public int getWeight()
+    {
+        return itemWeight;
+    }
+    
+    public float getItemValue()
+    {
+        
+        return itemValue;
+    }
 }
