@@ -2,19 +2,21 @@
 
 public class Item {
     // Declare attributes here
-    int itemId = 0;
-    int itemWeight = 0;
-    String itemDurability = null;
-    String itemName = null;
-    float itemValue = 0;
+    private int itemId = 0;
+    private int itemWeight = 0;
+    private String itemDurability = null;
+    private String itemName = null;
+    private float itemValue = 0;
     
+    // Create an overridden constructor here
     public Item()
     {
+        itemId++;
         
     }
     
     
-    // Create an overridden constructor here
+    
     
     // Create accessors and mutators for your traits
     public String getName()
@@ -40,9 +42,56 @@ public class Item {
         return itemWeight;
     }
     
-    public float getItemValue()
+    public float getValue()
     {
         
         return itemValue;
     }
+    
+    public void setName(String userInputName)
+    {
+        itemName = userInputName;
+        
+    }
+    
+    
+    public void setId()
+    {
+        
+    }
+    
+    public void setWeight(int userInputWeight)
+    {
+        itemWeight = userInputWeight;
+        
+    }
+    
+    public void setDurability(String userDurability)
+    {
+        if (userDurability == null)
+        {
+            userDurability = "medium";
+        }   
+            else if (userDurability.compareToIgnoreCase("low") == 0 || 
+                userDurability.compareToIgnoreCase("medium") == 0 ||
+                userDurability.compareToIgnoreCase("high") == 0)
+                {
+                    //do nothing
+                }
+                
+                    else
+                    {
+                        userDurability = "medium";
+                    }
+        
+        itemDurability = userDurability;
+        
+    }
+    
+    public void setValue(float userInputValue)
+    {
+        itemValue = userInputValue;
+        
+    }
+    
 }
