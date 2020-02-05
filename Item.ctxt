@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=Item
+comment1.params=
+comment1.target=Item()
+comment10.params=userDurability
+comment10.target=void\ setDurability(java.lang.String)
+comment11.params=userInputValue
+comment11.target=void\ setValue(float)
+comment2.params=
+comment2.target=java.lang.String\ getName()
+comment3.params=
+comment3.target=java.lang.String\ getDurability()
+comment4.params=
+comment4.target=int\ getID()
+comment5.params=
+comment5.target=int\ getWeight()
+comment6.params=
+comment6.target=float\ getValue()
+comment7.params=userInputName
+comment7.target=void\ setName(java.lang.String)
+comment8.params=
+comment8.target=void\ setId()
+comment9.params=userInputWeight
+comment9.target=void\ setWeight(int)
+numComments=12

@@ -1,4 +1,5 @@
 #BlueJ package file
+<<<<<<< HEAD
 dependency1.from=Assignment02Driver
 dependency1.to=Item
 dependency1.type=UsesDependency
@@ -20,6 +21,9 @@ package.numDependencies=1
 package.numTargets=3
 package.showExtends=true
 package.showUses=true
+=======
+#Tue Feb 04 10:22:29 PST 2020
+>>>>>>> 418b99219361e853abdea22ad6d03baeaa0abacb
 project.charset=UTF-8
 readme.height=58
 readme.name=@README

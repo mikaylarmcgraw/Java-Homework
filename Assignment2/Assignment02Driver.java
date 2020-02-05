@@ -43,6 +43,7 @@ public class Assignment02Driver {
                     addItem(cargohold);
                     break;
                 case 2:
+<<<<<<< HEAD
                     System.out.println("Please enter item you'd like head cargo employee to remove: ");
                     userInputString = stringInput.nextLine();
                     System.out.println("Please enter the value of " + userInputString + " you'd like to remove: ");
@@ -53,6 +54,12 @@ public class Assignment02Driver {
                     System.out.println("Cargo hold employee on duty is sorting through cargo hold now...");
                     sortItems(cargohold);
                     System.out.println("Please select display now to view your new sorted cargo hold.");
+=======
+                    removeItem(cargohold);
+                    break;
+                case 3:
+                    sortItems(cargohold);
+>>>>>>> 418b99219361e853abdea22ad6d03baeaa0abacb
                     break;
                 case 4:
                     System.out.println("Your head cargo hold employee on deck is ready  to help you search for whatever item you desire!");
@@ -68,6 +75,7 @@ public class Assignment02Driver {
                     System.out.println();
                     displayItems(cargohold);
                     break;
+<<<<<<< HEAD
                 case 6:
                     System.out.println("Displaying each item in list form: "); //debugging purposes
                     System.out.println();
@@ -82,6 +90,11 @@ public class Assignment02Driver {
                 default:
                     System.out.println("Menu option not valid!");
                     System.out.println("Please enter either 1 - 5 to manipulate your cargo hold or press 0 to exit.");
+=======
+                case 0:
+                    System.out.println("Thank you for using the BlackStar Cargo Hold interface. See you again soon!");
+                    System.exit(0);
+>>>>>>> 418b99219361e853abdea22ad6d03baeaa0abacb
             }
         }
 
@@ -137,8 +150,13 @@ public class Assignment02Driver {
            System.out.println("Item's name: "+ myNewItem.getName());
            //System.out.println("Item's ID: " + myNewItem.getId());
            System.out.println("Item's durability: " + myNewItem.getDurability());
+<<<<<<< HEAD
            System.out.println("Item's weight: " + myNewItem.getWeight() + " ton(s).");
            System.out.println("Item's value: $" + myNewItem.getValue());
+=======
+           System.out.println("Item's weight: " + myNewItem.getWeight());
+           System.out.println("Item's value: " + myNewItem.getValue());
+>>>>>>> 418b99219361e853abdea22ad6d03baeaa0abacb
             
         }
             else
@@ -244,11 +262,19 @@ public class Assignment02Driver {
         }
                 else
                 {
+<<<<<<< HEAD
                     System.out.println("The item you were searching for: " + userInput + " occurred " + occurrence +" time(s) during the employee's search of cargo hold."); 
                     System.out.println("The item was found at position(s): ");
                     for (int i = 0; i < position.size(); i++)
                     {
                         System.out.print((position.get(i) + 1) + "  ");
+=======
+                    System.out.println("The item you were searching for: " + userInput + " occurred " + occurrence +" times during the employee's search of cargo hold."); 
+                    System.out.println("The item was found at positions: ");
+                    for (int i = 0; i < position.size(); i++)
+                    {
+                        System.out.print(i + "  ");
+>>>>>>> 418b99219361e853abdea22ad6d03baeaa0abacb
                         
                     }
                     System.out.println();
@@ -266,6 +292,7 @@ public class Assignment02Driver {
         // Food - 2
         // Water - 3
         // Ammunition - 5
+<<<<<<< HEAD
         //creating a copy of array list
         ArrayList<Item> copyCargoHold = (ArrayList<Item>) cargohold.clone();
         //initalizing variables
@@ -333,6 +360,16 @@ public class Assignment02Driver {
             //System.out.println("Item's durability: " + cargohold.get(i).getDurability());
             //System.out.println("Item's weight: " + cargohold.get(i).getWeight() + " ton(s).");
             //System.out.println("Item's value: $" + cargohold.get(i).getValue());
+=======
+        for (int i = 0; i < cargohold.size(); i++)
+        {
+            System.out.println("Cargo hold spot: " + (i+1));
+            System.out.println("Item's name is: " + cargohold.get(i).getName());
+            //System.out.println("Item's ID is: " + cargohold.get(i).getID()); 
+            System.out.println("Item's durability: " + cargohold.get(i).getDurability());
+            System.out.println("Item's weight: " + cargohold.get(i).getWeight());
+            System.out.println("Item's value: " + cargohold.get(i).getValue());
+>>>>>>> 418b99219361e853abdea22ad6d03baeaa0abacb
             System.out.println();
         }
         
