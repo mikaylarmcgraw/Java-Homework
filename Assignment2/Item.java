@@ -48,6 +48,7 @@ public class Item {
         return itemValue;
     }
     
+    
     public void setName(String userInputName)
     {
         itemName = userInputName;
@@ -94,8 +95,6 @@ public class Item {
         
     }
     
-<<<<<<< HEAD
+
 }
-=======
-}
->>>>>>> 418b99219361e853abdea22ad6d03baeaa0abacb
+
